@@ -9,7 +9,7 @@ eg. to expose localhost:4567 to publically available, you need to run below comm
 
 To start node server, run below command
 
-node myFirstbot.js
+node myListbot.js
 
 ----------
 for config you need to install config:
