@@ -40,10 +40,18 @@ app.post('/webhook/', function (req, res) {
                 text = event.message.text;
 
 
-                // write your code here
+                // write your code here - part 1
 
 
             }
+
+        if (event.postback) {
+            postbackJson = event.postback;
+            payload = postbackJson.payload;
+            console.log(payload);
+
+            // write your code here - part 2
+        }
     }
     res.sendStatus(200);
 });
